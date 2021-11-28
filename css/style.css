@@ -364,6 +364,7 @@ button:focus {
 	color: #000;
 }
 
+
 #btn-signin {
 	background-color: white;
 	color: blue;
@@ -385,7 +386,7 @@ a.navbar-brand img {
     height: 55px;
 }
 
-.top-header .navbar .navbar-collapse ul li a.active {}
+.top-header .navbar .navbar-collapse ul li a:active {}
 .top-header .navbar .navbar-collapse ul li a:hover,
 .top-header .navbar .navbar-collapse ul li a:focus {
 	border-radius: 5px;
@@ -404,7 +405,7 @@ a.navbar-brand img {
 .top-header.fixed-menu {
     width: 100%;
     position: fixed;
-    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+    .top-header.fixed-menu
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
@@ -1912,10 +1913,13 @@ p.section_count {
 }
 
 .full {
+	color: white;
 	float: left;
 	width: 100%;
 }
-
+ .course-des li {
+	 list-style: disc;
+ }
 .heading_main {
     float: left;
     display: flex;
