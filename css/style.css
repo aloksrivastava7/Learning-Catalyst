@@ -1,5 +1,5 @@
-/*------------------------------------------------------------------ 
-    IMPORT FONTS 
+/*------------------------------------------------------------------
+    IMPORT FONTS
 -------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-/*------------------------------------------------------------------ 
-    IMPORT FILES 
+/*------------------------------------------------------------------
+    IMPORT FILES
 -------------------------------------------------------------------*/
 
 @import url(animate.css);
@@ -18,7 +18,7 @@
 @import url(timeline.css);
 @import url(flaticon.css);
 
-/*------------------------------------------------------------------ 
+/*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
 
@@ -168,8 +168,8 @@ button:focus {
 }
 
 
-/*------------------------------------------------------------------ 
-   LOADER 
+/*------------------------------------------------------------------
+   LOADER
 -------------------------------------------------------------------*/
 
 #preloader {
@@ -364,6 +364,18 @@ button:focus {
 	color: #000;
 }
 
+#btn-signin {
+	background-color: white;
+	color: blue;
+	border: 1px solid blue;
+	border-radius: 5px;
+}
+
+#btn-signin:hover {
+	background-color: blue;
+	color: white;
+}
+
 a.navbar-brand {
     left: 0;
     position: relative;
@@ -376,8 +388,9 @@ a.navbar-brand img {
 .top-header .navbar .navbar-collapse ul li a.active {}
 .top-header .navbar .navbar-collapse ul li a:hover,
 .top-header .navbar .navbar-collapse ul li a:focus {
-	background: transparent;
-	color: #d4a81e;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
 }
 
 .search_icon.nav-link img {
@@ -450,7 +463,12 @@ a.navbar-brand img {
     width: 950px;
 }
 .full > img {
+		margin-top: 30px;
     width: 100%;
+}
+
+#contact-us-img {
+	height: 500px;
 }
 .blog_img_popular {
     margin-bottom: 30px;
@@ -649,8 +667,10 @@ a.navbar-brand img {
 .contact_bt {
     width: 180px;
     height: 50px;
-    background: #d4a81e;
-    color: #fff;
+		border: 2px solid orange;
+		border-radius: 5px;
+		background-color: white;
+		color: orange;
     float: left;
     line-height: 50px;
     text-align: center;
@@ -662,7 +682,8 @@ a.navbar-brand img {
 
 .contact_bt:hover,
 .contact_bt:focus {
-    color: #fff;
+    background-color: orange;
+		color: white;
 }
 
 .dark_bg .contact_bt {
@@ -695,7 +716,7 @@ a.navbar-brand img {
 }
 
 .tab_menu ul li:nth-child(6) {
-    background: #d4a81e;
+    background: #002147;
     transform: skew(-30deg);
 	color:#fff;
 }
@@ -735,7 +756,7 @@ span.icon {
 }
 
 span.icon img {
-    height: 35px;
+    height: 40px;
 }
 
 /*------------------------------------------------------------------ About -------------------------------------------------------------------*/
