@@ -2270,3 +2270,24 @@ section.inner_banner h3 {
 	background: #fff;
 	color: #12385b;
 }
+
+table,th,td {
+  border: 2px ridge grey;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  background-color: white;
+}
+th,td {
+  text-align: center;
+  padding: 10px;
+}
+#tableheader {
+  color: white;
+  background-color: #6C4285;
+}
+.link:hover {
+  background-color: #89BBFF;
+}
+th {
+  text-align: center;
+}

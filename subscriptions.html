@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Catalyst</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* background-color: grey; */
+        }
+        body{
+            background-color:rgb(155, 170, 175)
+        }
+        .container{
+            width: 630px;
+            margin: 22px auto;
+            /* border: 3px solid black; */
+            background-color: white;
+            height: 560px;
+
+        }
+        table{
+            /* border: 2px solid black; */
+            border-collapse: collapse;
+            align-items: center;
+            margin: 12px;
+            /* background-color: white; */
+        }
+
+        th{
+            padding: 12px;
+            /* border: 2px solid black; */
+            color: purple;
+            border: 1px solid white;
+            line-height: 22px;
+            text-align: center;
+            font-size: 30px;
+
+        }
+        td{
+            padding: 6px 29px;
+            border: 1px solid white;
+            /* font-weight: bold; */
+            font-size: 15px;
+            font-weight: 591;
+
+        }
+        .button{
+            border-radius: 9px;
+            background-color: blueviolet;
+            padding: 12px 20px;
+            color: white;
+        }
+        caption{
+            padding: 12px;
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+        .button:hover{
+            background-color: red;
+        }
+        i{
+            color: rgb(74, 197, 17);
+
+        }
+        .price{
+            color: rgb(74, 197, 17);
+        }
+        .price td{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        tr:nth-child(odd){
+            background-color: rgba(19, 202, 89, 0.137);
+
+        }
+        .h1{
+            background-color: rgba(41, 211, 41, 0.445);
+            line-height: 12px;
+        }
+        .h2{
+            background-color: lightblue;
+        }
+        tr:nth-child(odd){
+            background-color: rgba(41, 211, 41, 0.445);
+
+        }
+        .blu{
+            background-color: lightblue;
+
+        }
+        #cl{
+            color: red;
+        }
+        #cal{
+            color: purple;
+        }
+
+    </style>
+    <body>
+    <div class="container">
+
+        <table>
+            <caption>SELECT YOUR PLAN</caption>
+            <tr>
+
+                <th   class="h1"><i class="material-icons" id="cal">calculate</i>Basic</th>
+                <th class="h1"><i class="material-icons" id="cal">history</i>Plus</th>
+
+                <th class="h2"><i class="material-icons" id="cal">train</i>Delux</th>
+                <th class="h2"><i class="material-icons" id="cal">speed</i>Pro</th>
+            </tr>
+            <tr class="price">
+                <td>
+
+                    Rs 100/-
+                </td>
+                <td>Rs 200/-</td>
+
+                <td>Rs 500/-</td>
+                <td>Rs 1000/-</td>
+            </tr>
+            <tr>
+                <td>1 month</td>
+                <td>2 month</td>
+                <td class="blu">6 months</td>
+                <td class="blu"> 1 year</td>
+            </tr>
+            <tr>
+                <td>50MB</td>
+                <td>250MB</td>
+                <td>1GB</td>
+                <td>5GB</td>
+            </tr>
+            <tr>
+                <td>not included</td>
+                <td>not included</td>
+                <td class="blu">include</td>
+                <td class="blu">include</td>
+            </tr>
+            <tr>
+                <td><i class="material-icons">done</i></td>
+                <td><i class="material-icons">done</i></td>
+                <td><i class="material-icons">done</i></td>
+                <td><i class="material-icons">done</i></td>
+            </tr>
+            <tr>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons">done</i></td>
+                <td class="blu"><i class="material-icons">done</i></td>
+                <td class="blu"><i class="material-icons">done</i></td>
+            </tr>
+            <tr>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons">done</i></td>
+                <td><i class="material-icons">done</i></td>
+            </tr>
+            <tr>
+                <td><i class="material-icons" id="cl" >close</i></td>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td class="blu"><i class="material-icons">done</i></td>
+            </tr>
+            <tr>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons" id="cl">close</i></td>
+                <td><i class="material-icons">done</i></td>
+            </tr>
+            <tr>
+                <td><p class="button">Sign UP</p></td>
+                <td><p class="button">Sign UP</p></td>
+                <td class="blu"><p class="button">Sign UP</p></td>
+                <td class="blu"><p class="button">Sign UP</p></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
