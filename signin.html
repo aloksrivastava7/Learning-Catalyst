@@ -29,11 +29,12 @@
 
                     <div class="signin-form">
                         <h2 class="form-title">Sign In</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        <form method="POST" name="signin" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="email" pattern="/^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" id="email" placeholder="Email ID" required/>
+                                <input type="email" name="email" id="email" placeholder="Email ID" required oninput="return validateEmail(document.signin.email)"/>
                             </div>
+                            <span id = "message1" style="color:red"></span>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" name="your_pass" id="your_pass" placeholder="Password" required/>

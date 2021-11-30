@@ -1,4 +1,14 @@
-
+function validateEmail(inputText) {
+   var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+   if(inputText.value.match(mailFormat)) {
+      document.getElementById("message1").innerText = "";
+      return true;
+   }
+   else {
+      document.getElementById("message1").innerHTML = "**Please enter a valid email address!";
+      return false;
+   }
+}
 function verifyPassword() {
   var pw = document.getElementById("pass").value;
   //check empty password field
@@ -8,7 +18,7 @@ function verifyPassword() {
   }
 
  //minimum password length validation
-  if(pw.length < 5) {
+  if(pw.length < 8) {
      document.getElementById("message").innerHTML = "**Password length must be atleast 5 characters";
      return false;
   }
@@ -17,8 +27,10 @@ function verifyPassword() {
   if(pw.length > 15) {
      document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
      return false;
-  } else {
-     document.getElementById("message").innerHTML = "**Okay";
+  }
+  else {
+     document.getElementById("message").innerText = "";
+     return true;
   }
 }
 function Validate() {
@@ -28,7 +40,10 @@ function Validate() {
             document.getElementById("message").innerHTML = "**Passwords Don't Match";
             return false;
         }
-        return true;
+        else {
+           document.getElementById('message').innerText = "";
+            return true;
+        }
     }
 
 document.getElementById("login-form").addEventListener("submit",(event)=> {
